@@ -10,14 +10,14 @@ const fromCard = document.getElementById("valueCard");
 fromCard.cardOcult.addEventListener( 'keyup' ,  ( e )  =>  {
 //(e)creando el evento para acceder a el, con .target que es donde se encuentra el input .value acceder al valor
     let cardOcult = e.target.value;
-    validator.isValid(cardOcult)
 //volviendo a declarar la misma variable para agregar el metodo .replace y agregar expresiones regulares
 fromCard.cardOcult.value = cardOcult
     .replace(/\D/g, '') //elimina las letras al levantar la tecla
     .replace(/\s/g, '')//elimina los espacios en blanco que el usuario ingrese
     .replace(/(.{4})/g, '$1 ') //agrega un espacio en blanco cada 4 digitos
     .trim(); //elimina el ultimo caracter de una cadena, en este caso el ultimo espacio en blanco
-    
+
+    validator.isValid(fromCard.cardOcult.value.replace(/\s/g, ''))
 }) 
 
      
@@ -34,11 +34,14 @@ const open = document.getElementById("modalopen");
 container.addEventListener('click', () => {
   visible.style.display = "block";
   ocult.style.display = "none"; 
+  const isValid = validator.isValid(fromCard.cardOcult.value.replace(/\s/g, ''))
+  alerta(isValid)
     
 })
 
 cerrar.addEventListener('click',() => {
     modal.style.display = "none";
+    location.reload()
 })
 
 open.addEventListener('click',() =>{
@@ -46,7 +49,18 @@ open.addEventListener('click',() =>{
     
 })
  
+//Muestra un display de numero de tarjeta valido o invalido
+function alerta(resultValidation) {
+    const resultHTML = document.getElementById("validate");
+    if (resultValidation) {
+      resultHTML.innerHTML = "es valida";
+    
+    } else {
 
+        resultHTML.innerHTML = "no es valida";
+             
+    }
+  }
 
 
 

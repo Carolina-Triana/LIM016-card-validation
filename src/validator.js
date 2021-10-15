@@ -1,13 +1,14 @@
 const validator = {
 
-  isValid: function () {
+  isValid: function (cardn) {
+    // eslint-disable-next-line no-console
+    //console.log(cardn);
     //divide el numero por digitos y lo almacena en un array de strings, con map lo transforma en array de numeros
-    let cardn = "1234567891234560";
-    alert(cardn);
     let char = cardn.split("").map(Number);
     //reversa el array char
     let charReverse = char.reverse();
     //busca las posiciones pares (index impar) del array y lo multiplica x 2
+    //
     for (var i = 0; i < charReverse.length; i++) {
       if (i % 2 !== 0) {
         charReverse[i] = charReverse[i] * 2;
@@ -16,21 +17,20 @@ const validator = {
           charReverse[i] = String(charReverse[i])
             .split("")
             .map(Number)
-            .reduce(function (a, b) {
-              let c = a+b;
-              alert(c);
-              return c;
-              
+              .reduce(function (a, b) {
+                return a + b;
             });
+            
         }
+        //si no son mayor o igual a 10 *1 para que queden igual
       } else {
         charReverse[i] = charReverse[i] * 1;
       }
     }
-  
-    let valid = charReverse.reduce(function (a, b) {
-      return a + b;
-    });
+  // suma a+b si el numero es mayor de 10 
+  let valid = charReverse.reduce(function (a, b) {
+    return a + b;
+  });
 
     if (valid % 10 == 0) {
       //tarjeta valida
