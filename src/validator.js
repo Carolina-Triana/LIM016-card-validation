@@ -44,8 +44,8 @@ const validator = {
   maskify: function (maskNum) {
     if (maskNum.length >= 5) {
       const regexp = /.(?=.{4})/g;
-      const substr = "#";
-      return maskNum.replace(regexp, substr);
+      const mask = "#";
+      return maskNum.replace(regexp, mask);
     } else {
       return maskNum;
     }

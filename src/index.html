@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   </head>
 
@@ -17,33 +20,30 @@
       <p>Si quieres ver el contenido valida el pago con tu tarjeta</p>
       <button type="button" id="modalopen"> Validar </button>
       </div>
-    </section>
-    <section>
       <div class="modal-container" id="modalValidate">
            <div class="modal modal-value">
           
         <form name="valueCard" id="valueCard">
 <div id="CardNumber" class="modal-text">
-  <img src="chip.png" class="imgm">
   <h2> Credit Card </h2>
-<input type="text" class="card_ocult_input" value="" name="Card_ocult" id="cardOcult" maxlength="19" autocomplete="off" size="30" placeholder="Ingresa el numero de tu tarjeta aqui">
+  <br>
 <br>
+<br>
+<input type="text" class="card_ocult_input" name="Card_ocult" id="cardOcult" maxlength="19" autocomplete="off" size="25" placeholder="Numero de tarjeta">
 <br>
 <br>
 <button type="submit" id="buttonValidar" class="buttonValidar">Validar Pago</button>
 </div>
 </form>
 <div class="creditvalidate" id="ValidCard">
-<p id= "validate">funciona</p>
+<p id= "validate" class="p1"></p>
 <div class="push" id="exit"> 
-<button id="close">Has Click aqui para comenzar </button> 
+<button id="close" class="button2"> Salir </button> 
     </div>    
   </div>
  </div>
 </div>
 </section>
-
-    <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

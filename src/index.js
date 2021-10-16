@@ -53,11 +53,11 @@ open.addEventListener('click',() =>{
 function alerta(resultValidation) {
     const resultHTML = document.getElementById("validate");
     if (resultValidation) {
-      resultHTML.innerHTML = "es valida" + numMk;
+      resultHTML.innerHTML = "Tarjeta valida<br>" + numMk;
     
     } else {
 
-        resultHTML.innerHTML = "no es valida" + numMk;
+        resultHTML.innerHTML = "Tarjeta no valida<br>" + numMk;
              
     }
   }
