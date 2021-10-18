@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retrocartoonflix</title>
-    <title>Tarjeta de crédito valida</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <section>
-      <div class="ventanaModal">
-      <p>Si quieres ver el contenido valida el pago con tu tarjeta</p>
-      <button type="button" id="modalopen"> Validar </button>
-      </div>
+      <header>
+        <div class="ventanaModal">
+          <h3 class="logo">CartoonFlix</h3>
+        </div>
+      </header>
       <div class="modal-container" id="modalValidate">
-           <div class="modal modal-value">
-          
-        <form name="valueCard" id="valueCard">
-<div id="CardNumber" class="modal-text">
-  <h2> Credit Card </h2>
-  <br>
-<br>
-<br>
-<input type="text" class="card_ocult_input" name="Card_ocult" id="cardOcult" maxlength="19" autocomplete="off" size="25" placeholder="Numero de tarjeta">
-<br>
-<br>
-<button type="submit" id="buttonValidar" class="buttonValidar">Validar Pago</button>
-</div>
-</form>
-<div class="creditvalidate" id="ValidCard">
-<p id= "validate" class="p1"></p>
-<div class="push" id="exit"> 
-<button id="close" class="button2"> Salir </button> 
-    </div>    
-  </div>
- </div>
-</div>
-</section>
+        <div class="modal modal-value">
+          <form name="valueCard" id="valueCard">
+            <div id="cardNumber" class="modal-text">
+              <h2>Credit Card</h2>
+              <br />
+              <br />
+              <br />
+              <input
+                type="text"
+                class="card_ocult_input"
+                name="Card_ocult"
+                id="cardOcult"
+                minlength="19"
+                maxlength="19"
+                autocomplete="off"
+                size="25"
+                placeholder="Numero de tarjeta"
+                required
+              />
+              <br />
+              <br />
+              <button type="submit" id="buttonValidar" class="buttonValidar">
+                Validar Pago
+              </button>
+            </div>
+           </div>
+            </form> 
+          <div class="creditvalidate" id="ValidCard">
+            <p id="validate" class="p1"></p>
+            <div class="push" id="exit">
+              <button id="close" class="button2">Salir</button>
+            </div>
+        
+        </div>
+      </div>
+      
+    </section>
+    <main>
+      <div class="imagep">
+        <div class="ventanaModal">
+          <h4 class="Title">Bienvenid@ estas en CartoonFlix</h4>
+          <p class="description">
+            Estas apunto de comenzar a disfrutar las mejores series animadas de
+            la historia
+          </p>
+          <button type="button" id="modalopen" class="openModal">
+            Valida tu tarjeta para comenzar
+          </button>
+        </div>
+      </div>
+    </main>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
