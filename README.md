@@ -17,9 +17,8 @@ Se necesita un validador de tarjetas de credito, y gracias al funcionamiento del
 Primer prototipo papel
 ![Image text](https://github.com/Carolina-Triana/LIM016-card-validation/blob/main/prototipo1.jpg)
 
-
-
 Primer prototipo javascript
+![Image text](https://github.com/Carolina-Triana/LIM016-card-validation/blob/main/prototipo2.png)
 
 
 ## Resumen Feedback
