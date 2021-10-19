@@ -1,6 +1,6 @@
 # Tarjeta de crédito válida
 
-## 2. Resumen del proyecto
+##  Resumen del proyecto
 
 Este proyecto tiene como finalidad crear un formulario de validación para tarjetas de crédito, mediante la implementación del algoritmo de LUHN.
 
