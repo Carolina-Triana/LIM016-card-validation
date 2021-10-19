@@ -165,10 +165,11 @@ header .logo{
 h2{
     font-family:'Rampart One', cursiva;
     font-size: 3.5vw;
-    left: -1.2vw;
+    right: 1pw;
     top: -1.5vw;
     position: relative;
     display: inline;
+    color: #283747;
     
     
 }
@@ -178,8 +179,8 @@ h2{
     display: inline;
     outline: none;
     border: 0;
-    left: 2vw;
-    top: 0.5vw;
+    left: 4vw;
+    top: 1.5vw;
     position: relative;
     font-family: 'Concert One', cursive;
     font-size: 2.1vw;
@@ -189,8 +190,8 @@ h2{
 
 .buttonValidar{
     display:inline;
-    left: 9vw;
-    top: 0.5vw;
+    left: 11vw;
+    top: 1vw;
     position: relative;
     color: #06000c;
     background: transparent;
@@ -207,11 +208,40 @@ h2{
     background-color: #7c2abe;
     color: white;
 }
+.invalid1{
+    font-family: 'Concert One', cursive;
+    font-size: 1.2vw;
+    left: 6vw;
+    top: 0.5vw;
+    position:relative;
+    display: inline;
+    color: red;
+    
 
+}
+.button1{
+    display:inline;
+    right: 13vw;
+    top: 14.5vw;
+    position: relative;
+    color: #268dee;
+    background: transparent;
+    border: transparent;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 1.5vw;
+    cursor:pointer;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+}
+.button1:hover{
+    background-color: #b40312;
+    color: white;
+}
 .button2{
     display:inline;
-    right: 1vw;
-    top: 0.5vw;
+    left: 9.5vw;
+    top: 1.5vw;
     position: relative;
     color: #06000c;
     background: transparent;
@@ -231,7 +261,7 @@ h2{
 .p1{
     font-family: 'Concert One', cursive;
     font-size: 2vw;
-    left: -0vw;
+    left: 1vw;
     top: -1.5vw;
     position: relative;
     display: inline;
@@ -244,4 +274,14 @@ h2{
 }
 .invalid{
     display: none;
+    width: 35%;
+    height: 40%;
+    background-image: url(invalid.png);
+    height: 100%;
+    width:35vw;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position:unset;
+    overflow: hidden;
+
 }
