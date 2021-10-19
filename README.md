@@ -14,21 +14,21 @@ Se necesita un validador de tarjetas de credito, y gracias al funcionamiento del
 
 ## foto de prototipo en papel
 
-primer prototipo papel
+Primer prototipo papel
 
 
 
-primer prototipo javascript
+Primer prototipo javascript
 
 
-## resumen Feedback
+## Resumen Feedback
 
-En este proyecto mis compañeras de squat 3, asumieron el roll de CEO de Cartoonflix
+En este proyecto mis compañeras de squat 3, asumieron el roll de CEO de Cartoonflix.
 
-*primer prototipo en blanco : expuse la idea de crear el formulario, con una ventana emergente (modal), con el diseño de una tarjeta pero tipo cartoon, para que fuera dinamico.
-  Les gusto la idea y aprovaron el diseño.
+*Primer prototipo en blanco : expuse la idea de crear el formulario, con una ventana emergente (modal), con el diseño de una tarjeta pero tipo cartoon, para que fuera dinamico.
+  Les gusto la idea y aprobaron el diseño.
 
-*segundo prototipo casi terminado : Presente el prototipo con el diseño, y la validacion de la tarjeta funcionando.
+*Segundo prototipo casi terminado : Presente el prototipo con el diseño, y la validacion de la tarjeta funcionando.
  Sugirieron que agregara otra ventana en el modal como alert cuando los campos requeridos por el formulario no fueran correctos.
 
 ## Imagen prototipo final.
