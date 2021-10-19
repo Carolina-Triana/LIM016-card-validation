@@ -239,4 +239,9 @@ h2{
 
 .creditvalidate{
     display: none;
+
+   
+}
+.invalid{
+    display: none;
 }
