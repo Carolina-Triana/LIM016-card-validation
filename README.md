@@ -15,6 +15,7 @@ Se necesita un validador de tarjetas de credito, y gracias al funcionamiento del
 ## foto de prototipo en papel
 
 Primer prototipo papel
+![Image text](https://github.com/Carolina-Triana/LIM016-card-validation/blob/main/prototipo1.jpg)
 
 
 
