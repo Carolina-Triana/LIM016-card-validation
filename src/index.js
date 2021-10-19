@@ -4,7 +4,7 @@ let numMk ;
 let cardNumber;
 
 
-//agregando un evento para que se ejecute cuando 'keyup' se levante la tecla
+//agregando un evento para que se ejecute cuando se levante la tecla
 fromCard.cardOcult.addEventListener( 'keyup' ,  ( e )  =>  {
 //(e)creando el evento para acceder a el, con .target que es donde se encuentra el input .value acceder al valor
     let cardOcult = e.target.value;
@@ -15,26 +15,26 @@ fromCard.cardOcult.value = cardOcult
     .replace(/(.{4})/g, '$1 ') //agrega un espacio en blanco cada 4 digitos
     .trim(); //elimina el ultimo caracter de una cadena, en este caso el ultimo espacio en blanco
     numMk = validator.maskify(fromCard.cardOcult.value);
-    cardNumber = fromCard.cardOcult.value.replace(/\s/g, '');
+    cardNumber = fromCard.cardOcult.value.replace(/\s/g, ''); //creando una variable para enviar al validator
 }) 
 
-const ocult = document.getElementById("cardNumber"); //input text
-const container = document.getElementById("buttonValidar"); //button validar pago
-const visible = document.getElementById("validCard"); //container de p
-const cerrar = document.getElementById("close"); // button salir
-const modal = document.getElementById("modalValidate"); //div modal validador
-const open = document.getElementById("modalopen"); //button valida tu tarjeta para comenzar abrir nodal
+const ocult = document.getElementById("cardNumber");
+const container = document.getElementById("buttonValidar"); 
+const visible = document.getElementById("validCard"); 
+const cerrar = document.getElementById("close"); 
+const modal = document.getElementById("modalValidate"); 
+const open = document.getElementById("modalopen"); 
 const novalid = document.getElementById("campinvalid");
 const reset = document.getElementById("restart");
 
-reset.addEventListener('click', () =>{
+reset.addEventListener('click', () =>{ 
     ocult.style.display = "block";
     novalid.style.display = "none";
-    fromCard.reset();
+    fromCard.reset();   //funcion para reiniar el formulario si no es valido el campo
 })
 
 
-container.addEventListener('click', () => {    //boton submit "Validar Pago"
+container.addEventListener('click', () => {    //funcion para mostrar y ocultar ventana modal, validar campos
   visible.style.display = "block"; 
   cerrar.style.display = "none"
   novalid.style.display = "none"

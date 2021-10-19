@@ -1,16 +1,14 @@
 const validator = {
 
   isValid: function (cardn) {
-    // eslint-disable-next-line no-console
-    //console.log(cardn);
+    
     //divide el numero por digitos y lo almacena en un array de strings, con map lo transforma en array de numeros
     let luhn = cardn.split("").map(Number);
-    //reversa el array char
+    //reversa el array 
     let luhnReverse = luhn.reverse();
-    //busca las posiciones pares (index impar) del array y lo multiplica x 2
-    //
+    //busca las posiciones pares del array y lo multiplica x 2
     for (var i = 0; i < luhnReverse.length; i++) {
-      if (i % 2 !== 0) {
+      if (i % 2 !== 0) {  //
         luhnReverse[i] = luhnReverse[i] * 2;
         // condicional para separar (split) y sumar (reduce) los digitos convertidos en numero (map) del valor si son mayor o igual a 10
         if (luhnReverse[i] >= 10) {

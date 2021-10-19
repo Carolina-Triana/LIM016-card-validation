@@ -219,6 +219,7 @@ h2{
     display: inline;
     color: red;
     
+    
 
 }
 .button1{
@@ -272,9 +273,7 @@ h2{
 }
 .invalid{
     display: none;
-    width: 35%;
-    height: 40%;
-    background-image: url(invalid.png);
+    background-image: url(ainvalid.png);
     height: 100%;
     width:35vw;
     background-size:contain;
