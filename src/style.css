@@ -5,7 +5,9 @@
 }
 
 body{
- height: 100%;
+ 
+
+
  background-color: black;
 
 
@@ -15,25 +17,22 @@ body{
     margin: auto;
 
 }
-
 header{
-    padding: 1vw; 
+    
     background-color: #FBFCFC;
    
 
 }
-
 header .ventanaModal{
     display: flex;
     justify-content: space-between; /* lodo derecha menu izquierda*/
     align-items: center;
     
 }
-
 header .logo{
     font-family:'Rampart One', cursiva;
     font-size: 3.5vw;
-    background-image: linear-gradient(
+        background-image: linear-gradient(
         to right,
         orangered,
         orange,
@@ -47,24 +46,21 @@ header .logo{
     background-size: 20vw ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-   
-    
-    
-
+    display: inline;
+    position: relative;
+    left: 2vw;
 }
 /* ----- pagina principal--------*/
-
 .imagep {
-    padding: 16px;
-    min-height: 25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.30) 100%),url(f01.png);
+    padding: 4vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),url(f01.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 3.12em;
+    margin-bottom: 1em;
     display: flex;
-    align-items: end;
+    position:relative;
+    z-index: 0;
 
 }
 .imagep .ventanaModal {
@@ -72,18 +68,24 @@ header .logo{
     margin-bottom: 3em;
     
 }
-
 .imagep .Title{
     font-family:'Concert One', cursive;
-    font-size: 4vw;
-    margin-bottom: 1.5vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
     background-image: linear-gradient(
         to right,
-        #2EF250,
-        #2CB5DA,
-        #FF5CE3);
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink
+        );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: 0.3px black;
+    display: inline;  
+    top: 6vw;
+    position:relative;
     
     
 }
@@ -94,6 +96,8 @@ header .logo{
     text-shadow: 2px 2px 2px #2E4053;
     margin-bottom: 1.5vw;
     color:#fff;
+    position: relative;
+    top: 6vw;
 }
 .imagep .openModal{
     color: #06000c;
@@ -105,8 +109,9 @@ header .logo{
     cursor: pointer;
     text-decoration: none;
     font-family: 'Concert One', cursive;
+    position: relative;
+    top: 6vw;
 }
-
 .imagep .openModal:hover{
      background-color: #FF5CE3;
      color: white;
@@ -126,8 +131,8 @@ header .logo{
     background: #283773;
     margin-bottom: 55px;
     
+    
 }
-
 .modal-container{
     position:fixed;    
     background: rgba(0, 0, 0, 0.5);
@@ -138,9 +143,10 @@ header .logo{
     display: none;
     align-items: center;
     justify-content: center;
-
+    z-index: 1;
 }
 .modal{
+    z-index: 2;
     width: 35%;
     height: 40%;
     background-image: url(fondo.png);
@@ -151,17 +157,15 @@ header .logo{
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 15px;
-    position: relative;
+    position:absolute;
     overflow: hidden;
     top: 150px;
     left: 30%;
     right: 0;
     bottom: 0;
     align-items: center;
-   
+         
 }
-
-
 h2{
     font-family:'Rampart One', cursiva;
     font-size: 3.5vw;
@@ -173,7 +177,6 @@ h2{
     
     
 }
-
 .card_ocult_input{
     
     display: inline;
@@ -187,7 +190,6 @@ h2{
     background : inherit;
 
 }
-
 .buttonValidar{
     display:inline;
     left: 11vw;
@@ -257,7 +259,6 @@ h2{
     background-color: #7c2abe;
     color: white;
 }
-
 .p1{
     font-family: 'Concert One', cursive;
     font-size: 2vw;
@@ -266,11 +267,8 @@ h2{
     position: relative;
     display: inline;
 }
-
 .creditvalidate{
     display: none;
-
-   
 }
 .invalid{
     display: none;
@@ -284,4 +282,46 @@ h2{
     position:unset;
     overflow: hidden;
 
+}
+ /*------------ CARTELERA PELICULAS ----------*/
+
+.cartoon{
+    display: flex; /*para que esten de forma lineal */
+    width: 100%; /* ancho*/
+    justify-content: space-around; /*espacio entre cada imagen */
+    max-width: 150vw;
+}
+.movie{
+    object-fit: cover; /* permite que entre la imagen recortando y no distorcionando  */
+    width: 18vw;
+    height: 26vw;
+    margin-bottom: 10px;
+    margin: 6px;
+    position: relative;
+    left: 1.5vw;
+    transition: width 500ms;
+   
+    
+}
+.movie:hover{
+    width: 20%;
+
+}
+.p3{
+position: relative;
+display: inline;
+left: 3vw;
+color: white;
+font-family:'Tomorrow', sans-serif;
+font-size: 2vw;
+
+}
+.pie{
+position: relative;
+display: inline;
+left: 38vw;
+color: white;
+font-family:'Tomorrow', sans-serif;
+font-size: 1vw;
+padding: 1vw;
 }

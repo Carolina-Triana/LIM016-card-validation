@@ -83,5 +83,9 @@ function alerta(resultValidation) {
          e.preventDefault();   
         validator.isValid(cardNumber)   
      })
+     // si refresco la pagina ir al inicio 
+     window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
 
   //alert(validator.isValid());
