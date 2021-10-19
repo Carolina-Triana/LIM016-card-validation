@@ -6,7 +6,7 @@ Este proyecto tiene como finalidad Crear un formulario de validacion para tarjet
 
 Esta funcion es requerida para validar el pago de suscripcion a una pagina de contenido cartoon.
 
-## ¿Quienes son los usuarios y como solucionaremos el problema?
+## ¿Quienes son los usuarios y como solucionare el problema?
 
  Clientes que buscan una pagina de entretenimiendo, para recordar momentos y etapas nostalgicas, con las mejores series animadas de la decada de los 2000.
 
