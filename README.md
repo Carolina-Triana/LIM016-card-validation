@@ -1,7 +1,5 @@
 # Tarjeta de crédito válida
 
-link para interactuar con la pagina
-https://carolina-triana.github.io/src/index.html
 
 ##  Resumen del proyecto
 
@@ -37,6 +35,10 @@ En este proyecto mis compañeras de squat 3, asumieron el rol de CEO de Cartoonf
 
 ## Imagen prototipo final.
 ![Image text](https://github.com/Carolina-Triana/LIM016-card-validation/blob/main/prototipoFinal.png)
+
+## link para interactuar con la pagina
+https://carolina-triana.github.io/src/index.html
+
 
 
 
