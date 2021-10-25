@@ -1,5 +1,8 @@
 # Tarjeta de crédito válida
 
+link para interactuar con la pagina
+https://carolina-triana.github.io/src/index.html
+
 ##  Resumen del proyecto
 
 Este proyecto tiene como finalidad crear un formulario de validación para tarjetas de crédito, mediante la implementación del algoritmo de LUHN.
