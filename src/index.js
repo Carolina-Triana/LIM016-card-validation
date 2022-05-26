@@ -1,8 +1,16 @@
 import validator from './validator.js';
+
 const fromCard = document.getElementById("valueCard");
+const ocult = document.getElementById("cardNumber");
+const container = document.getElementById("buttonValidar"); 
+const visible = document.getElementById("validCard"); 
+const cerrar = document.getElementById("close"); 
+const modal = document.getElementById("modalValidate"); 
+const open = document.getElementById("modalopen"); 
+const novalid = document.getElementById("campinvalid");
+const reset = document.getElementById("restart");
 let numMk ;
 let cardNumber;
-
 
 //agregando un evento para que se ejecute cuando se levante la tecla
 fromCard.cardOcult.addEventListener( 'keyup' ,  ( e )  =>  {
@@ -18,21 +26,11 @@ fromCard.cardOcult.value = cardOcult
     cardNumber = fromCard.cardOcult.value.replace(/\s/g, ''); //creando una variable para enviar al validator
 }) 
 
-const ocult = document.getElementById("cardNumber");
-const container = document.getElementById("buttonValidar"); 
-const visible = document.getElementById("validCard"); 
-const cerrar = document.getElementById("close"); 
-const modal = document.getElementById("modalValidate"); 
-const open = document.getElementById("modalopen"); 
-const novalid = document.getElementById("campinvalid");
-const reset = document.getElementById("restart");
-
 reset.addEventListener('click', () =>{ 
     ocult.style.display = "block";
     novalid.style.display = "none";
     fromCard.reset();   //funcion para reiniar el formulario si no es valido el campo
 })
-
 
 container.addEventListener('click', () => {    //funcion para mostrar y ocultar ventana modal, validar campos
   visible.style.display = "block"; 
@@ -71,21 +69,13 @@ function alerta(resultValidation) {
              
     }
   }
-
-
-
-
-
-
-
-
-     fromCard.buttonValidar.addEventListener('click', (e) => {
+fromCard.buttonValidar.addEventListener('click', (e) => {
          e.preventDefault();   
         validator.isValid(cardNumber)   
      })
-     // si refresco la pagina ir al inicio 
-     window.onbeforeunload = function () {
+ // si refresco la pagina ir al inicio 
+ window.onbeforeunload = function () {
         window.scrollTo(0, 0);
       }
 
-  //alert(validator.isValid());
+  alert(validator.isValid());

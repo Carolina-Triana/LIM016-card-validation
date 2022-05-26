@@ -7,25 +7,24 @@ const validator = {
     //reversa el array 
     let luhnReverse = luhn.reverse();
     //busca las posiciones pares del array y lo multiplica x 2
-    for (var i = 0; i < luhnReverse.length; i++) {
-      if (i % 2 !== 0) {  //
+    for (let i = 0; i < luhnReverse.length; i++) {
+      if (i % 2) { // si i es un numero par diferente de 0 se multiplica x 2
         luhnReverse[i] = luhnReverse[i] * 2;
-        // condicional para separar (split) y sumar (reduce) los digitos convertidos en numero (map) del valor si son mayor o igual a 10
-        if (luhnReverse[i] >= 10) {
+      if (luhnReverse[i] >= 10) { // condicion para cumplir si los numeros son igual o mayor de 10
           luhnReverse[i] = String(luhnReverse[i])
-            .split("")
-            .map(Number)
-              .reduce(function (a, b) {
+            .split("") //condicional para separar en un array
+            .map(Number) //condicional para convertir el "string" en numero
+              .reduce(function (a, b) { // suma los digitos de la funfion 1 y 2
                 return a + b;
             });
             
         }
-        //si no son mayor o igual a 10 *1 para que queden igual
+        
       } else {
         luhnReverse[i] = luhnReverse[i] * 1;
       }
     }
-  // suma a+b si el numero es mayor de 10 
+  // suma los valores
   let valid = luhnReverse.reduce(function (a, b) {
     return a + b;
   });
@@ -40,13 +39,23 @@ const validator = {
   },
 
   maskify: function (maskNum) {
-    if (maskNum.length >= 5) {
-      const regexp = /.(?=.{4})/g;
+    if (maskNum.length >= 5) { // si la longitud es igual o mayor de 5
+      const regexp = /.(?=.{4})/g; //atrapar cualquier caracter menos 4
       const mask = "#";
-      return maskNum.replace(regexp, mask);
-    } else {
-      return maskNum;
-    }
+      return maskNum.replace(regexp, mask); // reemplaza 
+    } 
+    else return maskNum
+    
   },
 };
 export default validator;
+
+
+
+let number = 5;
+number = 10
+
+console.log(number);
+
+
+

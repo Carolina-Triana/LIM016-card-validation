@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retrocartoonflix</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <header>
+      <div class="ventanaModal">
+        <h3 class="logo">C A R T O O N F L I X</h3>
+      </div>
+    </header>
+    <div class="modal-container" id="modalValidate">
+      <div class="modal">
+        <form name="valueCard" id="valueCard">
+          <div id="cardNumber" class="modal-text">
+            <h2>Credit Card</h2>
+            <br />
+            <br />
+            <br />
+            <input type="text" class="card_ocult_input" name="Card_ocult" id="cardOcult" maxlength="19"
+              autocomplete="off" size="25" placeholder="Numero de tarjeta" />
+            <br />
+            <br />
+            <button type="submit" id="buttonValidar" class="buttonValidar">
+              Validar Pago
+            </button>
+          </div>
+        </form>
+        <div class="invalid" id="campinvalid">
+          <p class="invalid1" id="p2">
+            ¡OH NO! Ingrese un numero de tarjeta de 16 digitos
+          </p>
+          <button id="restart" class="button1"> regresar </button>
+        </div>
+        <div class="creditvalidate" id="validCard">
+          <p id="validate" class="p1"></p>
+          <div class="push" id="exit">
+            <button id="close" class="button2">Salir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="imagep">
+      <div class="ventanaModal">
+        <h4 class="Title">Bienvenido estas en CartoonFlix</h4>
+        <p class="description">
+          Estas apunto de comenzar a disfrutar las mejores series animadas de
+          la historia
+        </p>
+        <button type="button" id="modalopen" class="openModal">
+          Valida tu tarjeta para comenzar
+        </button>
+      </div>
+    </div>
+  </main>
+  <section>
+    <div class="cartoon">
+      <div class="titleMovie">
+        <h3 class="p3">Series Recomendadas</h3>
+        <br>
+        <br>
+        <div class="movie1">
+          <img src="./images/im1.png" class="movie">
+          <img src="./images/img2.jpg" class="movie">
+          <img src="./images/img3.jpg" class="movie">
+          <img src="./images/img4.jpg" class="movie">
+          <img src="./images/img5.jpg" class="movie">
+          <img src="./images/img6.jpg" class="movie">
+          <img src="./images/img7.jpg" class="movie">
+          <img src="./images/img8.jpg" class="movie">
+          <img src="./images/img10.jpg" class="movie">
+          <img src="./images/img11.jpg" class="movie">
+          <img src="./images/img13.jpg" class="movie">
+          <img src="./images/img14.jpg" class="movie">
+          <img src="./images/img15.jpg" class="movie">
+          <img src="./images/img16.jpg" class="movie">
+          
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="pie"> Creado por Carolina Triana para Laboratoria Lim16</footer>
+
+  <script src="src/index.js" type="module"></script>
+</body>
+
+</html>
